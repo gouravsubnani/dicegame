@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.dice-game{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image{
+  width : 649px;
+  height: 522px;
+}
+
+.text-wrapper{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 96px;
+}
+
+.button-wrap{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.btn{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  background: black;
+  color: white;
+  width: 220px;
+  height: 44px;
+  padding: 10px, 18px, 10px, 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover{
+  cursor: pointer;
+  border-radius: 2rem;
+}
