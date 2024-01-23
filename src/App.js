@@ -2,6 +2,10 @@ import { useState } from 'react';
 import './App.css';
 import Frontpage from './components/Frontpage';
 import Gameplay from './components/Gameplay';
+import TotalScore from './components/TotalScore';
+import NumberSelector from './components/NumberSelector';
+import YashiLovesGourav from './components/YashiLovesGourav';
+import RollDice from './components/RollDice';
 
 function App() {
 
@@ -17,6 +21,10 @@ function App() {
   return (
     <>
       {gameStart ? <Gameplay /> : <Frontpage toggle = {toggleFunction}/>}   
+      {/* <TotalScore /> */}
+      {/* <NumberSelector /> */}
+      {/* <YashiLovesGourav/> */}
+      {/* <RollDice /> */}
     </>
   );
 }

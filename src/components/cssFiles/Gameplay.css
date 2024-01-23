@@ -1,0 +1,12 @@
+
+
+.gp-first-flex{
+    display: flex;
+    justify-content: space-around;
+    gap: 50rem;
+}
+
+.gp-second-flex{
+    display: flex;
+    justify-content: center;
+}

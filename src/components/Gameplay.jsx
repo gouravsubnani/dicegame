@@ -1,22 +1,22 @@
 import React from 'react'
+import TotalScore from './TotalScore'
+import NumberSelector from './NumberSelector'
+import '../components/cssFiles/Gameplay.css'
+import RollDice from './RollDice'
 
 function Gameplay() {
   return (
     <>
-    <div className='first-container'>
-        <div className="first-container-left">
-            <div className="score-show-wrapper">
-                <div className="score-wrap">
-                    <p className='score'>0</p>
-                </div>
-                <p className='score-description'>Total Score</p>
-            </div>
-        </div>
-
-        <div className="first-container-right">
-            
-        </div>
+    <div className="gp-container">
+      <div className="gp-first-flex">
+        <TotalScore />
+        <NumberSelector />
+      </div>
+      <div className='gp-second-flex'>
+        <RollDice />
+      </div>
     </div>
+
     </>
   )
 }
