@@ -1,5 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 .rd-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.rd-img-wrapper{
+    width: 500px;
+    height: 450px;
+    margin-bottom: 0;
+    border: 2px solid red;
+}
+
+.rd-button-wrap{
+    margin-top : 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.rd-button-wrap p{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    width: 220px;
+    height: 44px;
+    padding: 10px, 18px, 10px, 18px;
+    background-color: black;
+    color: white;
+}
+
+.rd-button-wrap p:hover{
+    cursor: pointer;
+    border-radius: 2rem;
+  }
