@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../components/cssFiles/TotalScore.css';
 
-function TotalScore() {
+function TotalScore(props) {
+
   return (
     <div className='ts-first-container'>
-        <h1>0</h1>
-        <p className = "ts-text-wrap">Total Score</p>
+        <h1>{props.number}</h1>
+        <p className = "ts-text-wrap">{props.name}</p>
     </div>
   )
 }

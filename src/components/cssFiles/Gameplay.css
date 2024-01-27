@@ -3,10 +3,17 @@
 .gp-first-flex{
     display: flex;
     justify-content: space-around;
-    gap: 50rem;
+    gap: 30rem;
+    margin-bottom: 2rem;
 }
 
 .gp-second-flex{
     display: flex;
     justify-content: center;
+}
+
+.gp-left-wing{
+    display: flex;
+    margin-top : 0;
+    gap: 2rem;
 }
