@@ -18,13 +18,10 @@ function App() {
     }
   };
 
+
   return (
     <>
-      {gameStart ? <Gameplay /> : <Frontpage toggle = {toggleFunction}/>}   
-      {/* <TotalScore /> */}
-      {/* <NumberSelector /> */}
-      {/* <YashiLovesGourav/> */}
-      {/* <RollDice /> */}
+      {gameStart ? <Gameplay  /> : <Frontpage toggle = {toggleFunction}/>}   
     </>
   );
 }

@@ -4,20 +4,28 @@ import NumberSelector from './NumberSelector'
 import '../components/cssFiles/Gameplay.css'
 import RollDice from './RollDice'
 
-function Gameplay() {
-  let temp = 0 , tem = 0;
+function Gameplay(props) {
+ 
+  const [temp, setTemp] = useState(0);
+  const [tem, setTem] = useState(0);
+
+
   const randomNumber = () => {
     const randomDecimal = Math.random();
     const randomNumber = 1 + Math.floor(randomDecimal * (6));
-    temp += randomNumber;
+    setTemp((prevTemp) => {
+      return(
+        prevTemp + randomNumber
+      )
+    });
     setplayerNumber(temp);
     randomNumber2();
   } 
-
+  
   const randomNumber2 = () => {
     const randomDecimal = Math.random();
     const randomNumber2 = 1 + Math.floor(randomDecimal * (6));
-    tem += randomNumber2
+    setTem(prevTemp => prevTemp + randomNumber2);
     setcomputerNumber(tem);
   } 
   
